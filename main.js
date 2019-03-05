@@ -53,6 +53,10 @@ function removeItem(event) {
 
   if (isStack) {
     removeLastFromPage();
+    stack.shift();
+    console.log("The newest item: ", stack[0]);
+    console.log("The oldest item: ", stack[stack.length - 1]);
+    console.log("The number of items: ", stack.length);
     // Your code to remove it from the array  goes here!
   } else {
     removeFirstFromPage();
